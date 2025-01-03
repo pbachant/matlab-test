@@ -32,5 +32,5 @@ stages:
     meta:
       calkit:
         type: figure
-        title: The Pyton plot
+        title: The Python plot
         description: The plot created with Matplotlib.

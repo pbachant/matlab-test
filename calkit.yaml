@@ -14,7 +14,7 @@ figures:
     description: The plot.
     stage: plot-data
   - path: figures/plot-py.png
-    title: The Pyton plot
+    title: The Python plot
     description: The plot created with Matplotlib.
     stage: plot-data-py
 owner: pbachant
