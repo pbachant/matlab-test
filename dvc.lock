@@ -26,7 +26,7 @@ stages:
     outs:
     - path: figures/plot.png
       hash: md5
-      md5: 466a8f5a0b0f3156535daf4a8aedf0e3
+      md5: e4d326bd882b78d8e00cd8f3ea761259
       size: 20609
   collect-data:
     cmd: matlab -batch "run('scripts/collect_data.m');"
