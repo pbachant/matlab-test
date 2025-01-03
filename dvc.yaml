@@ -22,3 +22,15 @@ stages:
         type: figure
         title: The plot
         description: The plot.
+  plot-data-python:
+    cmd: calkit runenv -n py python scripts/plot-data.py
+    deps:
+      - scripts/plot-data.py
+      - data/raw/data.parquet
+    outs:
+      - figures/plot-py.png
+    meta:
+      calkit:
+        type: figure
+        title: Python plot
+        description: The plot made with Matplotlib.

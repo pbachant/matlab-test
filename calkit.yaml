@@ -3,6 +3,7 @@ description: >-
   Testing MATLAB in Calkit.
 dependencies:
   - matlab
+  - uv
 datasets:
   - path: data/raw/data.parquet
     title: Raw data
@@ -13,6 +14,10 @@ figures:
     title: The plot
     description: The plot.
     stage: plot-data
+  - path: figures/plot-py.png
+    title: Python plot
+    description: The plot made with Matplotlib.
+    stage: plot-data-python
 owner: pbachant
 name: matlab-test
 git_repo_url: https://github.com/pbachant/matlab-test
@@ -20,3 +25,8 @@ derived_from:
   project: calkit/example-matlab
   git_repo_url: https://github.com/calkit/example-matlab
   git_rev: 088658208e2a1b6378ef53db05d98d08743e124a
+environments:
+  py:
+    kind: uv-venv
+    path: requirements.txt
+    prefix: .venv
