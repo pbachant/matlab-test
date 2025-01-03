@@ -21,13 +21,13 @@ stages:
       size: 9853
     - path: scripts/plot_data.m
       hash: md5
-      md5: c8b93dbaeeafd299f590282687fa58fa
-      size: 148
+      md5: 29dae006c5f4d5a29a8b0ee150adf945
+      size: 169
     outs:
     - path: figures/plot.png
       hash: md5
-      md5: 466a8f5a0b0f3156535daf4a8aedf0e3
-      size: 20609
+      md5: b5dddf12a4cb560619a24207d8ffcc91
+      size: 22268
   collect-data:
     cmd: matlab -batch "run('scripts/collect_data.m');"
     deps:
