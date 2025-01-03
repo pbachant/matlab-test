@@ -40,3 +40,19 @@ stages:
       hash: md5
       md5: 7d4fadae29fbf5fdf9eedc81a9f0cc9e
       size: 9853
+  plot-data-py:
+    cmd: calkit runenv -n py python scripts/plot-data.py
+    deps:
+    - path: data/raw/data.parquet
+      hash: md5
+      md5: 7d4fadae29fbf5fdf9eedc81a9f0cc9e
+      size: 9853
+    - path: scripts/plot-data.py
+      hash: md5
+      md5: 0ce6752808f4907a8230883f12fc37f5
+      size: 199
+    outs:
+    - path: figures/plot-py.png
+      hash: md5
+      md5: 7edf9f2092699e87cc6abd108c50ce6a
+      size: 48689

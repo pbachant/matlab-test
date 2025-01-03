@@ -13,6 +13,10 @@ figures:
     title: The plot
     description: The plot.
     stage: plot-data
+  - path: figures/plot-py.png
+    title: The Pyton plot
+    description: The plot created with Matplotlib.
+    stage: plot-data-py
 owner: pbachant
 name: matlab-test
 git_repo_url: https://github.com/pbachant/matlab-test
