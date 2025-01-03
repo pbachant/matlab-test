@@ -20,3 +20,8 @@ derived_from:
   project: calkit/example-matlab
   git_repo_url: https://github.com/calkit/example-matlab
   git_rev: 088658208e2a1b6378ef53db05d98d08743e124a
+environments:
+  py:
+    path: requirements.txt
+    kind: uv-venv
+    prefix: .venv
